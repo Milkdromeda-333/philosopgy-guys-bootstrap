@@ -13,6 +13,18 @@
 		/>
 	</head>
 	<body>
+		<!--
+	TODO: 
+	[done] Make a breadcrumb navbar
+	[done]Make the sidebar come back up for larger screens
+	[]Add a modal that will pop up on the page after some time browsing the site
+	[]Style the articles
+	[]Add a sign up form and a pop-up for if someone signs up
+	[]Add an accordion for thr "by branch" or whatever thing.
+	[]Scrollspy for the philosophy books page
+	Doneso!
+	-->
+
 		<header>
 			<nav class="navbar navbar-expand-sm navbar-dark bg-dark px-3">
 				<!-- Nav logo -->
@@ -52,6 +64,8 @@
 					</ul>
 				</div>
 			</nav>
+
+			<!-- hero -->
 			<section
 				class="d-flex flex-column justify-content-center align-items-center"
 				style="
@@ -68,14 +82,16 @@
 				"
 			>
 				<h1>We love Philosophy</h1>
-				<h2 class="h6 mb-5">And, we love teaching it.</h2>
-				<a href="#" class="btn btn-warning">Learn more</a>
+				<h2 class="h6 mb-5 text-white">And, we love teaching it.</h2>
+				<a href="./what-is-philosophy.html" class="btn btn-warning"
+					>Learn more</a
+				>
 			</section>
 
 			<div
 				class="d-flex justify-content-center align-items-center bg-warning"
 			>
-				<p class="my-auto p-3 text-secondary">
+				<p class="my-auto p-2 text-muted">
 					A huge subject broken down into manageable chunks
 				</p>
 			</div>
@@ -196,10 +212,11 @@
 					</article>
 				</div>
 				<!--end col 1-->
+
 				<div class="col-md-4">
 					<!-- secondary nav -->
 					<nav role="navigation" class="mt-5">
-						<ul class="nav flex-column bg-light">
+						<ul class="nav flex-column border bg-light">
 							<li class="nav-item">
 								<a href="#" class="nav-link"
 									>Pre-Socratic Philosophy</a
@@ -248,7 +265,7 @@
 			<!-- end row -->
 		</div>
 		<!-- end container -->
-		<footer class="bg-dark p-2 text-center"  style="color: white;">
+		<footer class="bg-dark p-2 text-center" style="color: white;">
 			Copyright ©
 		</footer>
 
