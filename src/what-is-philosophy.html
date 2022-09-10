@@ -17,7 +17,7 @@
 			<nav class="navbar navbar-expand-sm navbar-dark bg-dark px-3">
 				<!-- Nav logo -->
 				<a
-					href="../index.html"
+					href="./index.html"
 					class="navbar-brand d-flex align-items-center"
 				>
 					<img
@@ -44,7 +44,7 @@
 				<div class="collapse navbar-collapse" id="navLinks">
 					<ul class="nav navbar-nav ms-auto text-center">
 						<li class="nav-item">
-							<a href="../index.html" class="nav-link active"
+							<a href="./index.html" class="nav-link active"
 								>Home</a
 							>
 						</li>
@@ -178,6 +178,47 @@
 								Pages)
 							</li>
 						</ul>
+
+						<p>
+							As used originally by the ancient Greeks, the term
+							"philosophy" meant the pursuit of knowledge for its
+							own sake, and comprised ALL areas of speculative
+							thought, including the arts, sciences and religion.
+						</p>
+						<p>
+							Philosophical questions (unlike those of the
+							sciences) are usually foundational and abstract in
+							nature. Philosophy is done primarily through
+							reflection and does not tend to rely on experiment,
+							although the methods used to study it may be
+							analogous to those used in the study of the natural
+							sciences.
+						</p>
+						<p>
+							In common usage, it sometimes carries the sense of
+							unproductive or frivolous musings, but over the
+							centuries it has produced some of the most important
+							original thought, and its contribution to politics,
+							sociology, mathematics, science and literature has
+							been inestimable.
+						</p>
+						<p>
+							Although the study of philosophy may not yield "the
+							meaning of life, the universe and everything", many
+							philosophers believe that it is important that each
+							of us examines such questions and even that an
+							unexamined life is not worth living. It also
+							provides a good way of learning to think more
+							clearly about a wide range of issues, and its
+							methods of analyzing arguments can be useful in a
+							variety of situations in other areas of life.
+						</p>
+						<p>
+							This website is mainly concerned with an analysis of
+							Western Philosophy. There are 4 common ways in which
+							Western Philosophy can be usefully broken down or
+							organized:
+						</p>
 					</article>
 				</div>
 				<!--end col 1-->
@@ -234,6 +275,58 @@
 			<!-- end row -->
 		</div>
 		<!-- end container -->
+		<!-- FORM -->
+		<div class="container-fluid bg-warning p-5">
+			<form id="form">
+				<h2 class="text-center h2 fw-bold">
+					Sign up for informational weekly emails!
+				</h2>
+				<div class="row justify-content-center">
+					<div class="col-sm-5">
+						<label for="name" class="form-label">Name:</label>
+						<input type="text" class="form-control" required />
+					</div>
+					<div class="col-sm-5">
+						<label for="email" class="form-label">Email:</label>
+						<input type="email" class="form-control" required />
+					</div>
+				</div>
+				<!--end row-->
+				<div class="row">
+					<button
+						class="btn bg-dark w-25 text-light mt-3 form-control mx-auto"
+						type="submit"
+						data-bs-toggle="modal"
+						data-bs-target="#signUpModal"
+					>
+						Sign up!
+					</button>
+				</div>
+				<!--end row-->
+			</form>
+
+			<!-- MODAL -->
+			<div
+				class="modal"
+				id="signUpModal"
+				tabindex="-1"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+							Thanks for signing up!
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="row">
 			<footer class="bg-dark p-2 text-center" style="color: white;">
 				Copyright ©
@@ -245,5 +338,6 @@
 			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
 			crossorigin="anonymous"
 		></script>
+		<script src="src/index.js"></script>
 	</body>
 </html>
