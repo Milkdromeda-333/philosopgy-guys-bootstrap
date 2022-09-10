@@ -17,7 +17,6 @@
 	TODO: 
 	[done] Make a breadcrumb navbar
 	[done]Make the sidebar come back up for larger screens
-	[]Add a modal that will pop up on the page after some time browsing the site
 	[]Style the articles
 	[]Add a sign up form and a pop-up for if someone signs up
 	[]Add an accordion for thr "by branch" or whatever thing.
@@ -265,7 +264,59 @@
 			<!-- end row -->
 		</div>
 		<!-- end container -->
-		<footer class="bg-dark p-2 text-center" style="color: white;">
+		<!-- FORM -->
+		<div class="container-fluid bg-warning p-5">
+			<form id="form">
+				<h2 class="text-center h2 fw-bold">
+					Sign up for informational weekly emails!
+				</h2>
+				<div class="row justify-content-center">
+					<div class="col-sm-5">
+						<label for="name" class="form-label">Name:</label>
+						<input type="text" class="form-control" required />
+					</div>
+					<div class="col-sm-5">
+						<label for="email" class="form-label">Email:</label>
+						<input type="email" class="form-control" required />
+					</div>
+				</div>
+				<!--end row-->
+				<div class="row">
+					<button
+						class="btn bg-dark w-25 text-light mt-3 form-control mx-auto"
+						type="submit"
+						data-bs-toggle="modal"
+						data-bs-target="#signUpModal"
+					>
+						Sign up!
+					</button>
+				</div>
+				<!--end row-->
+			</form>
+
+			<!-- MODAL -->
+			<div
+				class="modal"
+				id="signUpModal"
+				tabindex="-1"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+							Thanks for signing up!
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="bg-dark p-4 text-center" style="color: white;">
 			Copyright ©
 		</footer>
 
@@ -274,5 +325,6 @@
 			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
 			crossorigin="anonymous"
 		></script>
+		<script src="./src/index.js"></script>
 	</body>
 </html>
